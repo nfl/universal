@@ -19,7 +19,7 @@
     "Tobias Bosch <tbosch@google.com>",
     "PatrickJS <github@gdi2290.com>",
     "Jeff Whelpley <jeff@gethuman.com>",
-    "James Hush <james.hush@nfl.com"
+    "James Hush <james.hush@nfl.com>"
   ],
   "devDependencies": {
     "connect-livereload": "^0.5.4",

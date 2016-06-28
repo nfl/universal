@@ -20,8 +20,9 @@ import {
   Window
 } from '../preboot_interfaces';
 
+
 // the idea here is that preboot is a global value on the window that is used by the client
-export var preboot = prebootClient();
+export const preboot = prebootClient();
 
 // wrapper function used to contain all the preboot client functionality
 export function prebootClient() {
@@ -301,4 +302,3 @@ export function prebootClient() {
     getNodeKey: getNodeKey
   };
 }
-

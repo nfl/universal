@@ -20,7 +20,6 @@ import {
   Window
 } from '../preboot_interfaces';
 
-
 // the idea here is that preboot is a global value on the window that is used by the client
 export const preboot = prebootClient();
 

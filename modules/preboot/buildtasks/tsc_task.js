@@ -10,6 +10,15 @@ module.exports = function (opts) {
       declaration: true
     });
 
+    // return gulp.src(path.join(opts.rootDir, 'src/inline/preboot_inline.ts')).
+    //   pipe(typescript({
+    //     target: 'es5',
+    //     module: 'commonjs',
+    //     outFile: 'preboot_inline.js'
+    //   })).
+    //   pipe(size()).
+    //   pipe(gulp.dest(path.join(opts.rootDir, 'dist/')));
+
     return tsProject.src().
       pipe(typescript(tsProject)).
       pipe(size()).

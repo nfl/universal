@@ -10,11 +10,12 @@ module.exports = function (opts) {
       'dist/src/browser/preboot_browser.js',
       'dist/src/inline/preboot_inline.js'
     ])
-      .pipe(uglify())
+      .pipe(uglify({mangle: false}))
       .pipe(rename(function (path) {
         path.extname = '.min.js';
         return path;
       }))
+      .pipe(replace(/exports\..*;/, ''))
       .pipe(gulp.dest('dist'));
   });
 
@@ -23,6 +24,7 @@ module.exports = function (opts) {
       'dist/src/browser/preboot_browser.js',
       'dist/src/inline/preboot_inline.js'
     ])
+      .pipe(replace(/exports\..*;/, ''))
       .pipe(gulp.dest('dist'));
   });
 
